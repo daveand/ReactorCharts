@@ -471,7 +471,7 @@ export var lineChart = (chartId, chartData, optionsToValidate) => {
         body[0].style = `
             overflow: hidden;
         `
-        scrollValue = scroll.deltaY / 10;
+        scrollValue = scroll.deltaY / 10 * 5;
         
         for (let i = 0; i < numberOfSteps; i++) {
             let line = document.getElementById(`${chartId}-scaleline${i}`);
